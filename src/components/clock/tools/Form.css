@@ -1,0 +1,35 @@
+.form {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.form-control input {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.form input,
+.form button {
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.form-control__name {
+    padding: 10px;
+}
+
+.form-control__user-timezone,
+.form-control__button-add {
+    padding: 10px;
+}
+
+.form-control__button-add {
+    background-color: #ffffff;
+}
