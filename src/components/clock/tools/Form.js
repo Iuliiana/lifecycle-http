@@ -5,7 +5,7 @@ class Form extends React.Component {
     constructor(props) {
         super(props);
         this.nameRef = React.createRef();
-        this.state = { name: '', userTimezone: '' };
+        this.state = {name: '', userTimezone: ''};
         this.handleInputChange = this.handleInputChange.bind(this);
     }
 
@@ -13,9 +13,9 @@ class Form extends React.Component {
         this.nameRef.current.focus();
     }
 
-    handleInputChange({ target }) {
-        const { name, value } = target;
-        this.setState(prevForm => ({ ...prevForm, [name]: value }));
+    handleInputChange({target}) {
+        const {name, value} = target;
+        this.setState(prevForm => ({...prevForm, [name]: value}));
     }
 
     render() {
@@ -25,14 +25,14 @@ class Form extends React.Component {
                 onSubmit={(event) => {
                     event.preventDefault();
                     this.props.onFormSubmit(this.state);
-                    this.setState({ name: '', userTimezone: '' });
+                    this.setState({name: '', userTimezone: ''});
                     this.nameRef.current.focus();
                 }}
             >
-                <div className="form-control">
-                    <label htmlFor="name">Название</label>
+
+                <label htmlFor="name">Название
                     <input
-                        className="form-control__name"
+                        className="form__name"
                         type="text"
                         id="name"
                         name="name"
@@ -42,11 +42,11 @@ class Form extends React.Component {
                         autoComplete="off"
                         required
                     />
-                </div>
-                <div className="form-control">
-                    <label htmlFor="user-timezone">Временная зона</label>
+                </label>
+
+                <label htmlFor="user-timezone">Временная зона
                     <input
-                        className="form-control__user-timezone"
+                        className="form__user-timezone"
                         type="number"
                         id="user-timezone"
                         name="userTimezone"
@@ -56,9 +56,9 @@ class Form extends React.Component {
                         onChange={this.handleInputChange}
                         required
                     />
-                </div>
+                </label>
                 <button
-                    className="form-control__button-add"
+                    className="form__button-add"
                     type="submit"
                 >
                     Добавить

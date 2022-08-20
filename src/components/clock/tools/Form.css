@@ -4,13 +4,13 @@
     margin-bottom: 30px;
 }
 
-.form-control {
+.form label {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
 }
 
-.form-control input {
+.form input {
     width: 150px;
     margin-top: 10px;
 }
@@ -21,15 +21,15 @@
     border-radius: 5px;
 }
 
-.form-control__name {
+.form__name {
     padding: 10px;
 }
 
-.form-control__user-timezone,
-.form-control__button-add {
+.form__user-timezone,
+.form__button-add {
     padding: 10px;
 }
 
-.form-control__button-add {
+.form__button-add {
     background-color: #ffffff;
 }
