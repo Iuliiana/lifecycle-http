@@ -10,22 +10,36 @@
     overflow-wrap: anywhere;
 }
 
-.note__control-delete {
-    position: absolute;
-    top: -20px;
-    right: -20px;
+.header {
+    display: flex;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.update {
+    margin-left: 50px;
+}
+
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 40px;
     height: 40px;
-    font-size: 30px;
-    color: red;
-    background-color: #ffffff;
     border: 1px solid black;
     border-radius: 50%;
     text-decoration: none;
     user-select: none;
+}
+
+
+.note__control-delete {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 31px;
+    color: red;
+    background-color: #ffffff;
 }
 
 .form {

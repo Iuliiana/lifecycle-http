@@ -71,12 +71,14 @@ export class Crudpage extends React.Component {
     render() {
         return (
             <div>
-                <h1>Notes</h1>
-                <button
-                    onClick={this.handleUpdateButtonClick}
-                >
-                    update
-                </button>
+                <div className="header">
+                    <h1>Notes</h1>
+                    <button className="update button"
+                            onClick={this.handleUpdateButtonClick}
+                    >
+                        ⭯
+                    </button>
+                </div>
                 <ul>
                     {this.state.notes.map((note) => {
                         return (

@@ -6,7 +6,7 @@ class Note extends React.Component {
             <div className="note" id={this.props.id}>
                 <p>{this.props.text}</p>
                 <button
-                    className="note__control-delete"
+                    className="note__control-delete button"
                     onClick={this.props.onDeleteClick.bind(this)}
                 >&times;
                 </button>
